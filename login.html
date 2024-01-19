@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="cssLogin.css" />
+        <script type="text/javaScript" src="./scriptLogin.js"></script>
+    </head>
+
+    <body>
+        <form id="formulario">
+            <h2 id="Login">Login</h2>
+            <div class="divEmail input">
+                <input
+                    type="email"
+                    id="email"
+                    class="input-input"
+                    name="email"
+                    required
+                />
+                <label for="email" id="labelEmail" class="input-label"
+                    >Email</label
+                >
+                <span class="input-botao">
+                    <img
+                        id="imagemPessoa"
+                        src="./assets/user-people-man-svgrepo-com.svg"
+                    />
+                </span>
+            </div>
+
+            <div class="divSenha input">
+                <input
+                    type="password"
+                    id="senha"
+                    class="input-input"
+                    name="senha"
+                    required
+                />
+                <label for="senha" id="labelSenha" class="input-label"
+                    >Senha</label
+                >
+
+                <span class="input-botao">
+                    <img
+                        onclick="visualizarSenha()"
+                        id="imagem"
+                        src="./assets/eye-svgrepo-com.svg"
+                    />
+                </span>
+                <button
+                    type="submit"
+                    class="input-botaoEntrar"
+                    onclick="ValidarSenha() "
+                >
+                    Entrar
+                </button>
+            </div>
+        </form>
+    </body>
+</html>

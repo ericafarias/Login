@@ -1,0 +1,124 @@
+body{
+    background: url(./assets/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+form{
+    width: 240px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+
+    box-shadow: 0 0  5px rgba(0,0,0,0.3);
+    padding: 0px 4%;
+    background-color: white;
+
+}
+
+.input {
+    position: relative;
+    margin: 25px 0;
+    
+}
+
+.input-label {
+    position: absolute;
+    bottom: 55%;
+    left: 0%;
+    color: rgb(100, 100, 100);
+    cursor: text;
+}
+
+
+
+
+
+
+.input-input{
+    width: 100%;
+    padding: 5px;
+    border: 0;
+    border-bottom: 2px solid rgb(100,100,100);
+    outline: 0;
+}
+.input-input:focus, .input-input:valid{
+   
+    border-bottom: 2px solid blue;
+    
+}
+.input-input:focus ~ label, .input-input:valid ~ label {
+   
+ transform: translateY(-20px);
+ font-size: 12px;
+ color: blue;
+    
+}
+
+
+
+
+.input-botao{
+    
+    width: 15px;
+    height: 15px;
+    position: relative;
+    left: 90%;
+    bottom: 25px;
+}
+.input-botao img{
+    width: 15px;
+    height: 15px;
+    border: solid 1px #dcdada00;
+    transition: border-color 0.8s ease;
+   
+}
+
+.input-botao img:hover{
+    cursor:pointer;
+   
+    border: solid 1px #dcdada;
+    border-radius: 3px;
+   
+}
+
+.input-botaoEntrar{
+    background-color: black;
+    color: white;
+   border-radius: 5px;
+  width: 100px;
+  height: 20px;
+  position: relative;
+  left: 10%;
+  margin-top: 5%;
+     
+   
+}
+
+
+
+#login{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    
+    
+  
+}
+
+
+
+
+
+
+
